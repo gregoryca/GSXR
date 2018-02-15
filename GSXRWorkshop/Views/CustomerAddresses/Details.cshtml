@@ -1,0 +1,59 @@
+﻿@model GSXRWorkshop.Models.CustomerAddress
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CustomerAddress</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StreetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StreetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZipCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Housenumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Housenumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AddressId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<iframe src="//www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK&zoom=17&key=AIzaSyCxMamlv1FsFCJDxqWIGF_y1PbE9jslVYY"></iframe>

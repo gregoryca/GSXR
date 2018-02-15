@@ -1,0 +1,50 @@
+﻿@model GSXRWorkshop.Models.Repair
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Repair</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotorCycle.MotorCycleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotorCycle.MotorCycleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RepairName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RepairName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RepairId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

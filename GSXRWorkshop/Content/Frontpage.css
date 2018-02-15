@@ -1,0 +1,27 @@
+﻿body {
+
+}
+
+button {
+
+}
+
+form {
+
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.Home {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 250;
+    color: red;
+    background-color: blueviolet;
+    background-image: url(C:\Users\3poStage\Pictures\GeForce.jpeg);
+    background-image: inherit;
+}
