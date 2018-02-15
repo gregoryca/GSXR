@@ -19,7 +19,7 @@ namespace GSXRWorkshop.Models
         public DbSet<CustomerAddress> CustomerAddress { get; set; }
         public DbSet<GarageAddress> GarageAddress { get; set; }
 
-        public System.Data.Entity.DbSet<GSXRWorkshop.Models.CarRepair> CarRepairs { get; set; }
+        public DbSet<CarRepair> CarRepairs { get; set; }
 
 
         //public System.Data.Entity.DbSet<GSXRWorkshop.Models.Dragtimes> Dragtimes { get; set; }
